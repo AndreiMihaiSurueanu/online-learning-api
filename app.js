@@ -57,6 +57,10 @@ app.get('/courses', (req, res) => {
     res.json(courses);
 })
 
+app.get('/', (req, res) => {
+    res.send("Home endpoint for the Online Learning Android App API");
+})
+
 app.listen(port, () =>{
     console.log(`Server listening on port ${port}`);
 })
